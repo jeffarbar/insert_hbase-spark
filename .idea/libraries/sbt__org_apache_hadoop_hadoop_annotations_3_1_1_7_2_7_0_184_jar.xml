@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: org.apache.hadoop:hadoop-annotations:3.1.1.7.2.7.0-184:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-annotations/3.1.1.7.2.7.0-184/hadoop-annotations-3.1.1.7.2.7.0-184.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-annotations/3.1.1.7.2.7.0-184/hadoop-annotations-3.1.1.7.2.7.0-184-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

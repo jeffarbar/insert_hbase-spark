@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sbt: org.apache.curator:curator-framework:4.3.0.7.2.7.0-184:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repository.cloudera.com/artifactory/cloudera-repos/org/apache/curator/curator-framework/4.3.0.7.2.7.0-184/curator-framework-4.3.0.7.2.7.0-184.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

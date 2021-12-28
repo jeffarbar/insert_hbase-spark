@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sbt: org.apache.parquet:parquet-encoding:1.10.99.7.2.7.0-184:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repository.cloudera.com/artifactory/cloudera-repos/org/apache/parquet/parquet-encoding/1.10.99.7.2.7.0-184/parquet-encoding-1.10.99.7.2.7.0-184.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,67 @@
+name := "carrega_banco"
+
+version := "1.1"
+
+scalaVersion := "2.11.10"
+
+scalacOptions := Seq("-deprecation", "-encoding", "utf8")
+
+val sparkVersion = "2.4.0.7.1.6.0-297"
+
+val hbaseVersion = "2.2.3.7.1.6.0-297"
+
+val hadoopVersion = "3.1.1.7.1.6.0-297"
+
+val hbaseSparkVersion = "1.0.0.7.1.6.0-297"
+
+unmanagedBase := baseDirectory.value /"lib"
+resolvers += "cloudera repo" at "https://repository.cloudera.com/artifactory/cloudera-repos/"
+
+libraryDependencies ++= Seq(
+
+  "org.scala-lang" % "scala-library" % "2.11.12",
+
+  "org.apache.spark" %% "spark-core"   % sparkVersion,
+  "org.apache.spark" %% "spark-sql" % sparkVersion,
+  "org.apache.spark" %% "spark-streaming" % sparkVersion ,
+
+  "org.apache.hbase" % "hbase-common" % hbaseVersion,
+  "org.apache.hbase" % "hbase-mapreduce" % hbaseVersion,
+  "org.apache.hbase" % "hbase-client" % hbaseVersion,
+  "org.apache.hbase" % "hbase-server" % hbaseVersion,
+  "org.apache.hbase" % "hbase-protocol" % hbaseVersion,
+  "org.apache.hbase" % "hbase-hadoop2-compat" % hbaseVersion,
+  "org.apache.hbase" % "hbase-hadoop-compat" % hbaseVersion,
+  "org.apache.hbase" % "hbase-metrics" % hbaseVersion,
+  "org.apache.hbase" % "hbase-metrics-api" % hbaseVersion,
+
+  "org.apache.hadoop" % "hadoop-auth" % hadoopVersion,
+  "org.apache.hadoop" % "hadoop-common" % hadoopVersion,
+  "org.apache.hadoop" % "hadoop-mapreduce-client-core" % hadoopVersion,
+  "org.apache.hadoop" % "hadoop-mapreduce-client-common" % hadoopVersion,
+  "org.apache.hadoop" % "hadoop-client" % hadoopVersion,
+
+  "org.apache.hbase.connectors.spark" % "hbase-spark" % hbaseSparkVersion,
+  "org.apache.hbase.connectors.spark" % "hbase-spark-protocol" % hbaseSparkVersion
+
+)
+
+dependencyOverrides ++= Seq(
+  //"com.fasterxml.jackson.module" %% "jackson-module-scala" % jacksonVersion,
+  //"com.fasterxml.jackson.core" % "jackson-databind" % jacksonVersion,
+  //"com.fasterxml.jackson.core" % "jackson-core" % jacksonVersion,
+  //"org.apache.curator" % "curator-recipes" % "4.3.0.7.2.7.0-184"
+)
+
+
+
+
+mainClass in assembly := Some("Main")
+
+assemblyMergeStrategy in assembly := {
+ case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+ case x => MergeStrategy.first
+}
+
+
+

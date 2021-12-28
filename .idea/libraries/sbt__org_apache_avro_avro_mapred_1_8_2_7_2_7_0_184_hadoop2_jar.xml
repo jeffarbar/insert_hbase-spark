@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sbt: org.apache.avro:avro-mapred:1.8.2.7.2.7.0-184:hadoop2:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repository.cloudera.com/artifactory/cloudera-repos/org/apache/avro/avro-mapred/1.8.2.7.2.7.0-184/avro-mapred-1.8.2.7.2.7.0-184-hadoop2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
